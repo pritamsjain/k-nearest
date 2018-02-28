@@ -23,38 +23,6 @@ func TestKNearestNeibhors(t *testing.T) {
 		ans := tree.KNearestNeibors(&currentloc, 2)
 		compareResult(t, ans, &p1, &p2)
 	}
-
-	// case 3
-	/*{
-		points := []Point{
-			NewEuclideanPoint(0.0, 0.0, 0.0),
-			NewEuclideanPoint(0.0, 0.0, 1.0),
-			NewEuclideanPoint(0.0, 1.0, 0.0),
-			NewEuclideanPoint(1.0, 0.0, 0.0),
-			NewEuclideanPoint(0.0, 0.0, 0.0),
-			NewEuclideanPoint(0.0, 0.0, 0.1),
-			NewEuclideanPoint(1.0, 1.0, 1.0),
-			NewEuclideanPoint(0.1, 0.1, 0.1),
-		}
-		tree := New(points)
-		ans := tree.KNearestNeibors(NewEuclideanPoint(0.0, 0.0, 0.0), 7)
-		if len(ans) != 7 {
-			t.Errorf("expected 7 points, actual: %v", len(ans))
-		}
-	}
-	// case 4
-	{
-		points := []Point{
-			NewEuclideanPoint(0.0, 0.0, 0.0),
-			NewEuclideanPoint(0.0, 0.0, 0.0),
-			NewEuclideanPoint(0.0, 0.0, 0.0),
-		}
-		tree := New(points)
-		ans := tree.KNearestNeibors(NewEuclideanPoint(0.0, 0.0, 0.0), 3)
-		if len(ans) != 3 {
-			t.Errorf("expected 3 points, actual: %v", len(ans))
-		}
-	}*/
 }
 
 func TestKfurthermostNeibhors(t *testing.T) {
